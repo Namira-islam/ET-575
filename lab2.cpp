@@ -41,5 +41,17 @@ cout<<"is num1 equal to num2 ?? "<< (num1 ==num2)<<endl;
     cout<<"is num1  greater than num2?? "<<(num1>num2)<<endl;
     cout<<" is num1  less than num2?? "<<(num1<num2)<<endl;
     cout<<" is num1  equal than num2?? "<<(num1!=num2)<<endl;
+    cout<<"\n-----example 4 : logical operator----- "<<endl;
+    // and operator
+    bool check_num = (num1!=num2)&&(num1<num2)&&(num1>5);
+    cout<<"the result of check num is  "<<check_num<<endl;
+    //OR operator
+    bool check_or = (num2>0)||(num2!=3)||(num2<num1);
+    cout<<" the result of check or is " << check_or<<endl;
+    cout<<"\n-----example 5 : casting----- "<<endl;
+    int n = 5;
+    float m =n/2.0 ;
+    cout<<"implicit casting =  "<<m<<endl;
     return 0;
+  
 }
