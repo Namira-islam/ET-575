@@ -117,8 +117,82 @@ int main(){
         cout<< " gender = undefined " << endl;
         break;
     }
-    cout << "------EXERCISE 1  -------" << endl;
+    cout << "------EXERCISE 1 : NESTED CONDITIONAL STATEMENT -------" << endl;
     
-   
+    double amount ;
+cout << "Enter the amount of money you have saved: ";
+cin >> amount;
+
+if (amount < 0) {
+cout << "Have some savings!" << endl;
+}
+else if (amount < 200000) {
+cout << "Keep saving!" << endl;
+}
+else {
+// ====== Nested IF for 200k – 500k ======
+if (amount >= 200000 && amount <= 500000) {
+cout <<" With $ "<<amount<< " You can afford an Apartment or Co-op." << endl;
+
+if (amount <= 300000) {
+cout << "with $ "<<amount<< " Studio" << endl;
+}
+else if (amount <= 400000) {
+cout <<"with $ "<<amount<< " You can afford 1 BR + 1 Bath" << endl;
+}
+else { // 400001 – 500000
+cout <<"with $ "<<amount<< " You can afford 2 BRs + 1 Bath" << endl;
+}
+}
+else {
+// ====== Nested IF for 500k – 1M ======
+if (amount > 500000 && amount <= 1000000) {
+
+if (amount <= 700000) {
+cout << "with $ "<<amount<<" You can afford 2 BRs + 2 Baths" << endl;
+}
+else { // 700001 – 1,000,000
+cout << "with $ "<<amount<<" You can afford 3 BRs + 3 Baths" << endl;
+}
+}
+else {
+// Above 1M
+cout <<"with $ "<<amount<< " You can afford a Mansion!" << endl;
+}
+}
+}
+    cout << "------EXERCISE 2 : SWITCH STATEMENT -------" << endl;
+char choice;
+int number;
+
+// Step 1: ask user for a number
+cout << "Enter a number: ";
+cin >> number;
+
+// Step 2: ask if they want to double it
+cout << "Do you want to double the number? (Y/N): ";
+cin >> choice;
+
+// Step 3: use switch-case
+switch (choice) {
+case 'Y':
+case 'y':
+number = number * 2;
+break;
+
+case 'N':
+case 'n':
+// keep the number as is
+break;
+
+default:
+// for invalid input, reset to zero
+number = 0;
+break;
+}
+
+// Step 4: output result
+cout << "The number is set to " << number << endl;
+
     return 0;
 }
