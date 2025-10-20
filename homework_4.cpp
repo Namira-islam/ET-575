@@ -59,24 +59,21 @@ int dimension= 11;
 
 
    
-        for (int i = 0; i < dimension; i++) {
+        cout << "\n----- QUESTION:3 -----" << endl;
+  
+
+    for (int i = 0; i < dimension; i++) {
         for (int j = 0; j < dimension; j++) {
-            // draw lowercase 'r' shape
-            if (
-                (j == 3 && i >= 3 && i <= 8) ||            
-                (i == 3 && j >= 3 && j <= 6) ||           
-                (i == 4 && j == 6) ||                      
-                (i == 5 && j == 5) ||                    
-                (i == 6 && j == 6)                         
-            )
-                cout << "# ";
-            else
-                cout << ". ";
+            if ((i == 2 && (j == 3 || j == 4)) ||
+                ((i == 3 || i == 4) && j >= 3 && j <= 7) ||
+                (i >= 5 && i <= 9 && (j == 3 || j == 4))) {
+                cout << "#";
+            } else {
+                cout << ".";
+            }
         }
         cout << endl;
     }
-
-    
 
     return 0;
 }
