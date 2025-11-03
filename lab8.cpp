@@ -74,6 +74,7 @@ int main(){
         }
     }
 
+    
     cout<< endl<< "There are " << count_multiplesof_2 << " numbers that are multiples of 2." << endl;
    
     
