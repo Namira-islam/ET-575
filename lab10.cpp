@@ -27,10 +27,11 @@ int main()
 
     for(int row = 1; row<=user_row; row++){
         for (int s=1; s<=seats; s++)
-        cout<< "Row "<<row<< "Seat"<<s<<"\t";
-     
+        cout<<" Row ="<<row;
+        cout<<"  Seat ="<<s<<"\t";
+      cout<<"\n";
     }
-    cout<<endl;
+   
 
     cout<<"\n----- Example 3 : 2d graphing -----"<<endl;
     int dimension = 9;
