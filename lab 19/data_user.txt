@@ -1,0 +1,2 @@
+This is my output file – Type your full name.
+This is an appended message from the exercise!
